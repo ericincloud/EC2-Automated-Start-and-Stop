@@ -17,7 +17,7 @@
 ```
 import boto3 
 region = 'us-east-1' # Replace with your desired region
-instances = ['213sdsfsfsdf'] # Replace with desired EC2 instance ID(s)
+instances = ['i-213sdsfsfsdf'] # Replace with desired EC2 instance ID(s)
 ec2 = boto3.client('ec2', region_name=region) 
 
 def lambda_handler(event, context): 
@@ -31,7 +31,7 @@ def lambda_handler(event, context):
 ```
 import boto3 
 region = 'us-east-1' # Replace with your desired region
-instances = ['3424432432'] # Replace with desired EC2 instance ID(s)
+instances = ['i-3424432432'] # Replace with desired EC2 instance ID(s)
 ec2 = boto3.client('ec2', region_name=region) 
 
 def lambda_handler(event, context): 
@@ -40,7 +40,10 @@ def lambda_handler(event, context):
 ```
 
 ## Step 5: Configure CloudWatch Events/EventBridge 
-#####
+### Stop Instance Schedule:
+#### Head to CloudWatch and start creating a "Schedule" > Select `Recurring Schedule` > Under `Cron-based schedule` create desired schedule to stop instance. > Select `Off` for `Flexible time schedule` > Next > Select `Invoke Lambda` > Select the "EC2Stop" Lambda function 
+
+### Start Instance Schedule:
 
 ## Step 6: 
 #####
@@ -48,7 +51,7 @@ def lambda_handler(event, context):
 
 ### Finish! Congratulations, you've setup and configured EC2 Automated Start and Stop using Lambda Functions and CloudWatch Events/EventBridge. 
 ## Notes
-*
+* Make sure you have the correct Cron expression arrangement/configuration.
 
 ## Reference 
 *

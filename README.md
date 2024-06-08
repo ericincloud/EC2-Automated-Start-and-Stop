@@ -1,6 +1,6 @@
 # EC2-Automated-Start-and-Stop
-#### EC2 Automated Start & Stop automates the starting and stopping of EC2 instances according a schedule. 
-#### By automating this process, developers can start up instances according to a schedule without manual intervention. Instances can also be stopped automatically - effectively saving time, money, and resources by preventing an active service like EC2 from running at all times. 
+
+#### EC2 Automated Start & Stop simplifies instance management by scheduling the activation and deactivation of EC2 instances. By automating this process, developers can start up instances according to a schedule without manual intervention. This  ensures resources are available when needed and stops instances during inactivity, saving time, reducing costs, and optimizing resource use — thus enhancing operational efficiency. 
 
 ## Architectural Diagram
 
